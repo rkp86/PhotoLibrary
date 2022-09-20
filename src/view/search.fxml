@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="324.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.searchController">
+   <children>
+      <Label layoutX="28.0" layoutY="21.0" text="Search">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchInput" layoutX="167.0" layoutY="58.0" promptText="enter a search term" />
+      <Label layoutX="399.0" layoutY="23.0" text="Search Results">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchButton" layoutX="258.0" layoutY="135.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="26.0" prefWidth="59.0" text="Search" />
+      <ChoiceBox fx:id="fieldChoices" layoutX="28.0" layoutY="57.0" prefHeight="26.0" prefWidth="122.0" />
+      <Button fx:id="createButton" layoutX="242.0" layoutY="239.0" mnemonicParsing="false" onMouseClicked="#createAlbum" text="Create album" />
+      <TextField fx:id="newAlbum" layoutX="53.0" layoutY="238.0" prefHeight="26.0" prefWidth="159.0" promptText="enter new album name" />
+      <ListView fx:id="imageList" layoutX="373.0" layoutY="59.0" prefHeight="226.0" prefWidth="166.0" />
+      <Label layoutX="51.0" layoutY="206.0" text="Create an album with the search results:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="comboSearch" layoutX="55.0" layoutY="95.0" prefHeight="26.0" prefWidth="94.0" />
+      <TextField fx:id="searchInput2" layoutX="167.0" layoutY="96.0" promptText="enter a search term" visible="false" />
+   </children>
+</AnchorPane>

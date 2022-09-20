@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"controller","c":"photosController","l":"displayInfo()"},{"p":"controller","c":"photosController","l":"photosController()","url":"%3Cinit%3E()"}]
